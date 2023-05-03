@@ -1,0 +1,8 @@
+name = input("Введите свое имя:")
+lastname = input("Введите свою фамилию:")
+work = input("Введите название места работы:")
+age = input("Введите свой возраст:")
+print(work)
+print('----------')
+print(lastname, name, ',', age)
+input()
