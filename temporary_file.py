@@ -1,17 +1,10 @@
-user = {
-    'name': '',
-    'lastname': '',
-    'work':'',
-    'age':'',
-}
-
+user = {}
 print("Данные пользователя 1")
 user['name'] = input("Введите свое имя:")
 user['lastname'] = input("Введите свою фамилию:")
 user['work'] = input("Введите название места работы:")
 user['age'] = input("Введите свой возраст:")
 print(user['work'])
-print('----------')
 print(user['lastname'], user['name'], ',', user['age'])
 
 user2 = {}
