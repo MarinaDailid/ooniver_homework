@@ -22,7 +22,7 @@ student_3 = {'name': 'Marina', 'last_name': 'Dailid', 'Age': 20, 'course': 4,
            }
 avg_1 = sum(student_1['score'].values()) / len(student_1['score'])
 print(avg_1)
-student_1['avg']= avg_1
+student_1['avg'] = avg_1
 avg_2 = sum(student_2['score'].values()) / len(student_2['score'])
 student_2['avg']= avg_2
 avg_3 = sum(student_3['score'].values()) / len(student_3['score'])
