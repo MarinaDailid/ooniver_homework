@@ -5,7 +5,7 @@
 # Отсортируйте их по убыванию (не используйте встроенные методы сортировки). Выведите списки на экран.
 from random import randint
 dict = {}
-for a in range(0,10):
+for a in range(0, 10):
     b = randint(10, 99)
     dict[b] = b**3
 print(dict)

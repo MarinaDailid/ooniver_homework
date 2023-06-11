@@ -3,14 +3,14 @@
 # а значениями для словаря — значения из меньшего списка деленные на 2. Выведите словарь в консоль.
 from random import randint
 list_01_len = randint(1, 20)
-list_01 = [0]*list_01_len
-for a in range(0,list_01_len):
-    list_01[a]=randint(1, 20)
+list_01 = [0] * list_01_len
+for a in range(0, list_01_len):
+    list_01[a] = randint(1, 20)
 print(list_01)
 list_02_len = randint(1, 20)
-list_02 = [0]*list_02_len
-for a in range(0,list_02_len):
-    list_02[a]=randint(1, 20)
+list_02 = [0] * list_02_len
+for a in range(0, list_02_len):
+    list_02[a] = randint(1, 20)
 print(list_02)
 
 dict_01 = {}
