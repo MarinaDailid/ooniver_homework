@@ -5,8 +5,7 @@
 # - если в диапазоне встречаются числа 23 или 32, то вывод идет до этих чисел и прерывается.
 a = int(input('Input first number: '))
 b = int(input('Input second number: '))
-if a < b:
-    while a < b :
+while a < b :
         if a%5!=0:
             print(a)
         if a == 23 or a== 32:
