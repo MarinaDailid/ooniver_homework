@@ -38,7 +38,7 @@ end = ord('я')  # код последней буквы алфавита
 char_num = 0
 for a in string:
     code = ord(a)
-    if start <= code and end >= code:
+    if start <= code <= end:
         char_num += 1
         if char_num % 3 == 0:
             print(a)

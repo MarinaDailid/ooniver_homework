@@ -46,5 +46,3 @@ print(f'Количество букв: {char_num}')
 words = string.split()
 word_num = len(words )
 print(f'количество слов: {word_num}')
-
-

@@ -5,4 +5,3 @@ while i < len_some_list:
     some_list[i]=some_list[i] * 2
     print(some_list[i] , end='')
     i += 1
-

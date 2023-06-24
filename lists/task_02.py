@@ -22,4 +22,3 @@ for o in range(quantity):
             worked_list[i-1] = b
 
 print(worked_list)
-
