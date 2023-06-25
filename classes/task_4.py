@@ -1,29 +1,33 @@
 class Rescuers:
-    def run(self):
-        print('Я умею бегать!!')
-    def jump(self):
-        print('Я умею прыгать!')
-    def fly(self):
-        print('Я умею летать!')
     def rest(self):
         print('Я отдыхаю')
 
+    def jump(self):
+        print('Я умею прыгать!')
 
+    def run(self):
+        print('Я умею бегать!!')
 class Chip(Rescuers):
     pass
+
 class Deil(Rescuers):
     pass
 class Rokki(Rescuers):
-    pass
+   pass
 class Vzhika(Rescuers):
-    pass
+    def fly(self):
+        print('Я умею летать!')
+
+    def run(self):
+        print('Я не умею бегать!!')
 class Gaechka(Rescuers):
-    pass
+   pass
 
 gaechka = Gaechka()
 gaechka.jump()
 vzhika = Vzhika()
 vzhika.fly()
+vzhika.run()
 rokki = Rokki()
 rokki.rest()
 deil = Deil()
