@@ -7,32 +7,47 @@ class Rescuers:
 
     def run(self):
         print('Я умею бегать!!')
-class Chip(Rescuers):
+
+class Mouse(Rescuers):
     pass
 
-class Deil(Rescuers):
+class Chipmunk(Rescuers):
     pass
-class Rokki(Rescuers):
-   pass
-class Vzhika(Rescuers):
+
+class Fly(Rescuers):
     def fly(self):
         print('Я умею летать!')
 
-    def run(self):
-        print('Я не умею бегать!!')
-class Gaechka(Rescuers):
+class Chip(Chipmunk):
+    pass
+
+class Deil(Chipmunk):
+    pass
+class Rokki(Mouse):
+   pass
+class Vzhika(Fly):
+    pass
+class Gaechka(Mouse):
    pass
 
 gaechka = Gaechka()
 gaechka.jump()
+gaechka.run()
+gaechka.rest()
 vzhika = Vzhika()
 vzhika.fly()
 vzhika.run()
+vzhika.jump()
+vzhika.rest()
 rokki = Rokki()
 rokki.rest()
+rokki.run()
+rokki.jump()
 deil = Deil()
 deil.run()
+deil.jump()
+deil.rest()
 chip = Chip()
 chip.rest()
-
-
+chip.jump()
+chip.run()

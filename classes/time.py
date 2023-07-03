@@ -1,24 +1,34 @@
 class Time:
     seconds: int
-    minutes: int
-    hours: float
 
     def __init__(self, seconds, minutes, hours):
-        all_seconds = hours * 3600 + minutes * 60 + seconds
-        self.hours = all_seconds // 3600
-        self.minutes = all_seconds % 3600 // 60
-        self.seconds = all_seconds - self.hours * 3600 - self.minutes * 60
+        self.seconds = hours * 60 * 60 + minutes * 60 + seconds
 
-    def sum_time(self):
-        pass
-    def diff_time(self):
-        pass
+    def print(self):
+        hours = self.seconds // 3600
+        minutes = self.seconds % 3600 // 60
+        seconds = self.seconds - hours * 3600 - minutes * 60
+        print(f'{hours} : {minutes} : {seconds}')
 
-    def comp_time(self):
-        pass
+    def sum_time(self, time):
+        self.seconds += time.seconds
+    def diff_time(self, time):
+        self.seconds -= time.seconds
 
-time = Time(1, 67, 66)
-print(time.sum_time())
+    def comp_time(self, time):
+        if self.seconds > time.seconds:
+            print('больше')
+        elif self.seconds == time.seconds:
+            print('равно')
+        else:
+            print('меньше')
 
-
+time = Time(3, 69 , 1)
+time1 = Time(30, 67, 2)
+time.sum_time(time1)
+time.print()
+time.diff_time(time1)
+time.print()
+time.comp_time(time1)
+time.print()
 

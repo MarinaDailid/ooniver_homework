@@ -1,7 +1,7 @@
 class Rescuers:
-    __weight:float = 0
-    height:int = 0
-    __fatigue:int = 0
+    __weight: float = 0
+    height: int = 0
+    __fatigue: int = 0
 
     @property
     def weight(self):
@@ -37,14 +37,24 @@ class Rescuers:
         print(f'[{self.__class__.__name__}] Я отдыхаю')
 
 
-class Chip(Rescuers):
+class Mouse(Rescuers):
     pass
-class Deil(Rescuers):
-    pass
-class Rokki(Rescuers):
-    pass
-class Vzhika(Rescuers):
 
+class Chipmunk(Rescuers):
+    pass
+
+class Fly(Rescuers):
+    def fly(self):
+        print('Я умею летать!')
+
+class Chip(Chipmunk):
+    pass
+
+class Deil(Chipmunk):
+    pass
+class Rokki(Mouse):
+   pass
+class Vzhika(Fly):
     @property
     def weight(self):
         return self.__weight
@@ -54,8 +64,9 @@ class Vzhika(Rescuers):
         if self.__weight > 0.02:
             print('Вжик не летает пока не похудеет')
 
-class Gaechka(Rescuers):
-    pass
+class Gaechka(Mouse):
+   pass
+
 
 gaechka = Gaechka()
 gaechka.jump()
